@@ -247,11 +247,25 @@
             font-size: 18px; font-weight: 600;
             margin-bottom: 10px;
             color: var(--text-primary);
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .toc-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--primary);
         }
 
         .toc-desc {
-            font-size: 14px;
-            color: var(--text-secondary);
+            font-size: 13px;
+            color: #999;
             margin-bottom: 16px;
             line-height: 1.6;
         }
@@ -314,8 +328,8 @@
         .phase-badge.middle { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); }
         .phase-badge.after { background: linear-gradient(135deg, var(--accent), #00897B); }
 
-        .phase-info h3 { font-size: 17px; font-weight: 600; margin-bottom: 2px; color: var(--text-primary); }
-        .phase-info span { font-size: 13px; color: var(--text-muted); }
+        .phase-info h3 { font-size: 17px; font-weight: 600; margin-bottom: 0; color: var(--text-primary); line-height: 1.4; }
+        .phase-info span { font-size: 13px; color: var(--text-muted); line-height: 1.2; }
 
         .phase-tool {
             display: inline-flex; align-items: center; gap: 8px;
@@ -683,7 +697,7 @@
                 <div class="toc-card" data-target="workflow">
                     <div class="toc-icon"><i data-lucide="refresh-cw" class="icon-xl"></i></div>
                     <div class="toc-title">项目工作流</div>
-                    <div class="toc-desc">覆盖设计全流程的 AI 工具应用：需求前置沟通、设计策略生成、B端设计产出、营销资源位延展、设计走查</div>
+                    <div class="toc-desc">覆盖设计全流程的 AI 工具应用 · 需求前置沟通 · 设计策略生成 · B端设计产出 · 营销资源位延展 · 设计走查</div>
                     <div class="toc-tags">
                         <span class="toc-tag">Pre · 需求沟通</span>
                         <span class="toc-tag">Pro · 设计产出</span>
@@ -693,7 +707,7 @@
                 <div class="toc-card" data-target="daily">
                     <div class="toc-icon"><i data-lucide="bar-chart-2" class="icon-xl"></i></div>
                     <div class="toc-title">日常工作</div>
-                    <div class="toc-desc">AI 赋能日常设计工作：分享PPT生产、设计需求数据可视化、月报生成</div>
+                    <div class="toc-desc">AI 赋能日常设计工作 · 分享PPT生产 · 设计需求数据可视化 · 月报生成</div>
                     <div class="toc-tags">
                         <span class="toc-tag">分享PPT</span>
                         <span class="toc-tag">周报可视化</span>
