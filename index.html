@@ -445,6 +445,7 @@
         }
 
         .image-item {
+            position: relative;
             border-radius: var(--radius);
             overflow: hidden;
             border: 1px solid var(--border);
@@ -469,6 +470,7 @@
 
         /* Compact Image Preview */
         .image-preview-compact {
+            position: relative;
             margin-top: 20px;
             max-height: 120px;
             border-radius: var(--radius);
@@ -492,6 +494,22 @@
             max-width: 100%;
             object-fit: contain;
             display: block;
+        }
+
+        /* Image Gradient Overlay */
+        .image-preview-compact::after,
+        .image-item::after {
+            content: "效果预览";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 24px 12px 8px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%);
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            pointer-events: none;
         }
 
         /* Pros & Cons */
