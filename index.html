@@ -452,6 +452,33 @@
             display: block;
         }
 
+        /* Compact Image Preview */
+        .image-preview-compact {
+            margin-top: 20px;
+            max-height: 320px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--bg-hover);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .image-preview-compact:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .image-preview-compact img {
+            max-height: 300px;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
         /* Pros & Cons */
         .pros-cons {
             display: grid;
@@ -715,8 +742,8 @@
                         <span class="flow-arrow">→</span>
                         <div class="flow-item"><span class="flow-number">3</span><span>效果配图</span></div>
                     </div>
-                    <div class="image-gallery">
-                        <div class="image-item" onclick="openLightbox('images/08f6e1fc903ee52571b17bde9b57ee74d8151cbb4e64cf1724d583bd7a675657.png')"><img src="images/08f6e1fc903ee52571b17bde9b57ee74d8151cbb4e64cf1724d583bd7a675657.png" alt="效果配图"></div>
+                    <div class="image-preview-compact" onclick="openLightbox('images/08f6e1fc903ee52571b17bde9b57ee74d8151cbb4e64cf1724d583bd7a675657.png')">
+                        <img src="images/08f6e1fc903ee52571b17bde9b57ee74d8151cbb4e64cf1724d583bd7a675657.png" alt="效果配图">
                     </div>
                     <div class="section-title-bar"><i data-lucide="scale" class="icon"></i> 评价 Review</div>
                     <div class="pros-cons">
@@ -817,8 +844,8 @@
                             <span class="flow-arrow">→</span>
                             <div class="flow-item"><span class="flow-number">6</span><span>效果配图</span></div>
                         </div>
-                        <div class="image-gallery">
-                            <div class="image-item" onclick="openLightbox('images/b2f5dc19f149ed8766fda3f6daab1d5de5a6251ed2d5a454866707cc577e55b3.png')"><img src="images/b2f5dc19f149ed8766fda3f6daab1d5de5a6251ed2d5a454866707cc577e55b3.png" alt="效果配图"></div>
+                        <div class="image-preview-compact" onclick="openLightbox('images/b2f5dc19f149ed8766fda3f6daab1d5de5a6251ed2d5a454866707cc577e55b3.png')">
+                            <img src="images/b2f5dc19f149ed8766fda3f6daab1d5de5a6251ed2d5a454866707cc577e55b3.png" alt="效果配图">
                         </div>
                         <div class="section-title-bar">评价 Review</div>
                         <div class="pros-cons">
@@ -860,8 +887,8 @@
                             <span class="flow-arrow">→</span>
                             <div class="flow-item"><span class="flow-number">4</span><span>伴随需求应用不断调整插件实现细节</span></div>
                         </div>
-                        <div class="image-gallery">
-                            <div class="image-item" onclick="openLightbox('images/0a0935d16d451072bcb8597a6c10eeb2c13719322295939ecfb06c3d35831ebe.png')"><img src="images/0a0935d16d451072bcb8597a6c10eeb2c13719322295939ecfb06c3d35831ebe.png" alt="效果配图"></div>
+                        <div class="image-preview-compact" onclick="openLightbox('images/0a0935d16d451072bcb8597a6c10eeb2c13719322295939ecfb06c3d35831ebe.png')">
+                            <img src="images/0a0935d16d451072bcb8597a6c10eeb2c13719322295939ecfb06c3d35831ebe.png" alt="效果配图">
                         </div>
                         <div class="section-title-bar">评价 Review</div>
                         <div class="pros-cons">
@@ -912,8 +939,8 @@
                         <span class="flow-arrow">→</span>
                         <div class="flow-item"><span class="flow-number">3</span><span>效果配图</span></div>
                     </div>
-                    <div class="image-gallery">
-                        <div class="image-item" onclick="openLightbox('images/282126fd87967128a2bb7d73480cb6a85253fee63fd1ec639a7e491cb32d7dc6.png')"><img src="images/282126fd87967128a2bb7d73480cb6a85253fee63fd1ec639a7e491cb32d7dc6.png" alt="效果配图"></div>
+                    <div class="image-preview-compact" onclick="openLightbox('images/282126fd87967128a2bb7d73480cb6a85253fee63fd1ec639a7e491cb32d7dc6.png')">
+                        <img src="images/282126fd87967128a2bb7d73480cb6a85253fee63fd1ec639a7e491cb32d7dc6.png" alt="效果配图">
                     </div>
                     <div class="section-title-bar"><i data-lucide="scale" class="icon"></i> 评价 Review</div>
                     <div class="pros-cons">
@@ -1029,8 +1056,8 @@
                         <span class="flow-arrow">→</span>
                         <div class="flow-item"><span class="flow-number">3</span><span>效果配图</span></div>
                     </div>
-                    <div class="image-gallery">
-                        <div class="image-item" onclick="openLightbox('images/ee5519b831e8a588bf157c68a643e022b51c04f7cc6677dfb8bab333849ce3ef.png')"><img src="images/ee5519b831e8a588bf157c68a643e022b51c04f7cc6677dfb8bab333849ce3ef.png" alt="效果配图"></div>
+                    <div class="image-preview-compact" onclick="openLightbox('images/ee5519b831e8a588bf157c68a643e022b51c04f7cc6677dfb8bab333849ce3ef.png')">
+                        <img src="images/ee5519b831e8a588bf157c68a643e022b51c04f7cc6677dfb8bab333849ce3ef.png" alt="效果配图">
                     </div>
                     <div class="section-title-bar"><i data-lucide="scale" class="icon"></i> 评价 Review</div>
                     <div class="pros-cons">
@@ -1084,8 +1111,8 @@
                         <span class="flow-arrow">→</span>
                         <div class="flow-item"><span class="flow-number">6</span><span>效果配图</span></div>
                     </div>
-                    <div class="image-gallery">
-                        <div class="image-item" onclick="openLightbox('images/166ba223a04a655128cc143cb57fefbad6395b4ae3a169d9abeeb272b19d3f91.png')"><img src="images/166ba223a04a655128cc143cb57fefbad6395b4ae3a169d9abeeb272b19d3f91.png" alt="效果配图"></div>
+                    <div class="image-preview-compact" onclick="openLightbox('images/166ba223a04a655128cc143cb57fefbad6395b4ae3a169d9abeeb272b19d3f91.png')">
+                        <img src="images/166ba223a04a655128cc143cb57fefbad6395b4ae3a169d9abeeb272b19d3f91.png" alt="效果配图">
                     </div>
                     <div class="section-title-bar"><i data-lucide="scale" class="icon"></i> 评价 Review</div>
                     <div class="pros-cons">
