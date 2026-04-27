@@ -500,6 +500,7 @@
         }
 
         .pros h4 { color: var(--success); }
+        .pros h4 .icon { color: var(--success); }
         .cons h4 { color: var(--danger); }
 
         .pros ul, .cons ul { list-style: none; }
@@ -1210,6 +1211,14 @@
 
     <script>
         lucide.createIcons();
+
+        // 强制"优点"区域的 check-circle 图标为绿色
+        document.querySelectorAll('.pros h4').forEach(h4 => {
+            const icon = h4.querySelector('i[data-lucide="check-circle"]');
+            if (icon) {
+                icon.style.color = '#66BB6A';
+            }
+        });
 
         // Sidebar toggle
         const sidebarToggle = document.getElementById('sidebarToggle');
